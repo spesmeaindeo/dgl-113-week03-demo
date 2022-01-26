@@ -8,7 +8,7 @@ describe("index.html", () => {
   });
 
   it("add 3 todos", async () => {
-    await page.select('#duration', 20 );
+    await page.select('#duration', "20" );
     await page.type( '#description', 'eat')
     await page.click('#add');
 
