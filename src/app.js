@@ -10,7 +10,7 @@ function addToDo(){
     let duration=durationEl.value;
 
 //description input box function
-    let descritionEl=document.getElementById('description');
+    let descriptionEl=document.getElementById('description');
     let description=descriptionEl.value;  
 
     console.log(duration,description);
@@ -27,4 +27,9 @@ function addToDo(){
 //clear button function
 function clearToDos(){
     console.log('clearToDos()');
+    todos=[];
+    count=0;
+    //helps clear element arrays
+    let todosEl=document.getElementById('todos');
+    todosEl.innerHTML='';
 }
