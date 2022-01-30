@@ -18,7 +18,7 @@ function addToDo(){
  //variable for list input function to push to table row and count number of items
  //use of template expression using descriptions. HTML markup per row. Joins elememts ids in table 
     count+=1;
-    todos.push('<tr><th>${count}</th><td>${duration}</td><td>${description}</td></tr>');
+    todos.push('<tr><th> ${count} </th><td> ${duration} </td><td> ${description} </td></tr>');
 
     let todosEl=document.getElementById('todos');
     todosEl.innerHTML=todos.join('');
